@@ -1,0 +1,262 @@
+.select,.selectNext{
+	cursor:pointer;
+	position:relative;
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #70dce0;
+	background:#062e68;
+	text-align: left;
+	padding-left:15px;
+	margin-left:20px;
+	display: block;
+}
+.xl-icon,.xl-iconNext{
+	position: absolute;
+	width: 7px;
+	height: 8px;
+    background-image: url("../images/arrow_up_down.png");
+    background-position: 0 -28px;
+    background-repeat: no-repeat;
+    top:50%;
+    margin-top:-4px;
+    right:10px;
+}
+.sq-icon{
+	background-position: 0px -18px;
+}
+
+/* --下拉选择列表样式-- */
+
+.selectList,.selectListNext{
+	z-index:999;
+	display:none;
+	width: 80px;
+	border: 1px solid #062e68;
+	border-radius: 6px;
+	-moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+	position: absolute;
+	top:39px;
+	left:0;
+}
+.listA,.listANext{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #70dce0;
+	text-align: center;
+	display: block;
+	background-color: #062e68;
+}
+.dropDown{position: relative;}
+.listA-all .listA{
+	width:100%;
+	text-align: left;
+	position: relative;
+	padding-left:15px;
+}
+.listA-all i img{
+	display:inline-block;
+	position: absolute;
+	right:10px;
+	top:15px; 
+}
+.listA-all a{
+	color:#70dce0 !important;
+}
+
+/* title 位置 */
+
+.step-standard{
+	position: absolute;
+	top:10px;
+	right:30px;
+}
+.step-standard label{
+	height:30px;
+	line-height: 30px;
+	color:#fff;
+	font-size:14px;
+}
+.step-standard .select{
+	width:88px;
+	height:30px;
+	line-height: 30px;
+	text-align: left;
+	padding-left:15px;
+	margin-left:0;
+	color:#fff;
+}
+.step-standard .selectList,.selectListNext{
+	width:88px;
+	top:30px;
+	left:0;
+}
+.step-standard .xl-icon,.xl-iconNext{
+    right:10px;
+}
+
+.step-standard .xl-icon{
+    background-position: 0 -9px;
+}
+.step-standard .sq-icon{
+	background-position: 0px 0px;
+}
+
+.step-standard .listA-all a{
+	color:#fff !important;
+}
+
+/* 睡眠 */
+.long_sleep .select{
+	width:130px;
+	margin-left:10px;
+}
+.long_sleep .xl-icon,.xl-iconNext{
+    right:10px;
+}
+.long_sleep .listA,.listANext{
+	width:130px;
+}
+
+/* 心率 */
+.currentheartrate .select{
+	width:150px;
+}
+.currentheartrate .xl-icon,.xl-iconNext{
+    right:5px;
+}
+.currentheartrate .listA,.listANext{
+	width:150px;
+}
+
+/* 血压 */
+.systolic_pressure .select{
+	width:150px;
+	margin-left:8px;
+}
+.systolic_pressure .xl-icon,.xl-iconNext{
+    right:10px;
+}
+.systolic_pressure .listA,.listANext{
+	width:150px;
+}
+
+/* THRA监测数据 */
+
+.sxtj_xl .select{
+	display: inline-block;
+	width:100px;
+	height:36px;
+	line-height: 36px;
+	color:#fff;
+	margin-left:0;
+}
+.sxtj_xl .selectList,.selectListNext{
+	top:35px;
+}
+.systolic_pressure .xl-icon,.xl-iconNext{
+    right:10px;
+}
+.sxtj_xl .listA,.listANext{
+	width:100px;
+}
+.sxtj_xl .xl-icon{
+	width: 15px;
+	height: 8px;
+    background-position: 0 -45px;
+}
+.sxtj_xl .sq-icon{
+	background-position: 0px -36px;
+}
+.sxtj_xl .listA-all a{
+	color:#fff !important;
+}
+
+/* 手环数据 */
+.sxtj_sh .select{
+	width:100px;
+}
+.sxtj_sh .listA,.listANext{
+	width:100px;
+}
+
+
+/* 添加用户 与 删除用户 */
+.addSelect ul li{
+	border:none;
+	height:26px;
+}
+.addSelect .xl-icon{
+	width:8px;
+    background-position: 0 -9px;
+}
+.addSelect .sq-icon{
+	background-position: 0px 0px;
+}
+.addSelect .select{
+	width:90%;
+	background: transparent;
+	border:1px solid #4390a5;
+	height:26px;
+	line-height: 26px;
+	margin-top:7px;
+}
+
+.addSelect .listA, .listANext{
+	width:100%;
+	height:26px;
+	background: transparent;
+	border:1px solid #4390a5;
+	line-height: 26px;
+	background: #002d71;
+	border-top: none;
+}
+
+.addSelect .listA:first-child, .listANext:first-child{
+	border-top:1px solid #4390a5;
+}
+.addSelect .selectList,.selectListNext{
+	z-index:999;
+	display:none;
+	width: 100%;
+	border: 1px solid #062e68;
+	border-radius: 6px;
+	-moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+	position: absolute;
+	top:26px;
+	left:0;
+} 
+.sexSelect .selectList,.selectListNext{
+	z-index:999;
+	display:none;
+	width: 100%;
+	border: 1px solid #062e68;
+	border-radius: 6px;
+	-moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+	position: absolute;
+	top:26px;
+	left:0;
+} 
+.sexSelect .listA, .listANext{
+	width:100%;
+	height:26px;
+	background: transparent;
+	border:1px solid #4390a5;
+	line-height: 26px;
+	background: #002d71;
+	border-top: none;
+}
+

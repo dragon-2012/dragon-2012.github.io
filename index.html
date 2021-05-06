@@ -1,0 +1,3558 @@
+<!doctype html>
+<head>
+    <title>怀化学院-用户管理</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1"> -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+    <meta name="staticBase" content="/static/">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/data.css?t=111111111211121">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link href="asset/css/bootstrap.css?t=112" rel="stylesheet">
+</head>
+
+<body >
+<div class="header">
+	<div class="header_inner">
+		<div class="title hhxy_base">
+			<img src="images/hhxy_user.png">
+		</div>
+	</div>
+	<div class="header_left">
+		<img src="images/second_title.png"/>
+	</div>
+	<div class="header_right">
+		<div class="header_right_inner clearfix">
+			<div class="date_time">09:15</div>
+			<div class="date_year">
+				<span>星期二</span>
+				<span>2018-08-14</span>
+			</div>
+			<div class="back"></div>
+		</div>	
+	</div>
+</div>
+
+<div class="main">
+	<div class="main_inner clearfix">
+		<div class="main_inner_left mainBox">
+			<div class="border_leftTop"></div>
+			<div class="border_rightTop"></div>
+			<div class="border_LeftBottom"></div>
+			<div class="border_rightBottom"></div>
+			<div class="main_panel user">
+				<div class="main_panel_header">
+					<div class="title">大华山镇</div>
+				</div>
+				<div class="main_panel_body">
+					<div class="container1">
+						<div class="div_scroll content content_base content_user">
+				           <ul class="details_list list_fcfff">
+				                <li class="active"><a href="#">李家峪村</a></li>
+								<li><a href="#">后北宫村</a></li>
+								<li><a href="#">挂甲峪村</a></li>
+								<li><a href="#">东辛庄村</a></li>
+								<li><a href="#">麻子峪村</a></li>
+								<li><a href="#">山门沟村</a></li>
+								<li><a href="#">梯子峪村</a></li>
+								<li><a href="#">西峪村</a></li>
+								<li><a href="#">大峪子村</a></li>
+								<li><a href="#">陈庄子村</a></li>
+								<li><a href="#">大华山村</a></li>
+								<li><a href="#">小峪子村</a></li>
+								<li><a href="#">陈庄子村</a></li>
+								<li><a href="#">大华山村</a></li>
+								<li><a href="#">小峪子村</a></li>
+				           	</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_inner_right">
+			<div class="main_panel user_r">
+				<div class="main_panel_header">
+					<div class="title">大华山镇</div>
+					<div class="user_message clearfix">
+						<div class="usertotal pull-left">用户总数：<span>123456人</span></div>
+						<div class="usermale pull-left">男：<span>234789人</span></div>
+						<div class="userfamale pull-left">女：<span>234789人</span></div>
+					</div>
+				</div>
+				<div class="main_panel_body">
+					<div class="screen_conditions clearfix">
+						<div class="sxtj pull-left">筛选条件</div>
+						<div class="sxtj_name pull-left"><label>姓名：</label><input type="text"></div>
+						<div class="sxtj_tel pull-left"><label>手机号：</label><input type="text"></div>
+						<div class="sxtj_xl pull-left">
+							<label>THRA监测数据：</label>
+							<div class="select">
+								<span class="selectVal" onselectstart="return false"></span>
+								<i class="xl-icon"></i>
+								<div class="selectList">
+									<div class="listA-all">
+										<a href="javascript:;" class="listA">有</a>
+										<a href="javascript:;" class="listA">无</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sxtj_xl sxtj_sh pull-left">
+							<label>手环数据：</label>
+							<div class="select">
+								<span class="selectVal" onselectstart="return false"></span>
+								<i class="xl-icon"></i>
+								<div class="selectList">
+									<div class="listA-all">
+										<a href="javascript:;" class="listA">有</a>
+										<a href="javascript:;" class="listA">无</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="addOrDelete pull-right">
+							<ul class="clearfix">
+								<li class="pull-left active" onclick="showPop('pop','fade')"><img src="images/icon_add.png" height="16" width="16"></li> 
+								<li class="pull-left" onclick="showPop('pop1','fade')"><img src="images/icon_detele.png" height="2" width="15"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="yjrecoad mTop20 mainBox">
+						<div class="border_leftTop"></div>
+						<div class="border_rightTop"></div>
+						<div class="border_LeftBottom"></div>
+						<div class="border_rightBottom"></div>
+						<div class="yjPanel">
+							<div class="yjPanel_header">
+								<div class="title">用户列表</div>
+							</div>
+							<div class="yjPanel_body" style="position: relative;">
+								<div class="floating-layer"></div>
+								<ul>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>ID</span></div>
+										<div class="yj_name" style="width:10%;"><span>姓名</span></div>
+										<div class="yj_sex" style="width:10%;"><span>性别</span></div>
+										<div class="yj_age" style="width:10%;"><span>年龄</span></div>
+										<div class="yj_phone" style="width:15%;"><span>手机号</span></div>
+										<div class="yj_THRA" style="width:20%;"><span>THRA检测数据</span></div>
+										<div class="yj_shsj" style="width:15%;"><span>手环数据</span></div>
+										<div class="yj_frequency" style="width:15%;"><span>预警次数</span></div>
+									</li>
+									<div class="">
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>1</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA" style="width:20%;"><span>无</span></div>
+										<div class="yj_shsj" style="width:15%;"><span>无</span></div>
+										<div class="yj_frequency" style="width:15%;"><span>0</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>2</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;" onclick="showPop('popTHRA','fade')"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;" onclick="showPop('popSHSJ','fade')"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>3</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>4</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>5</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>6</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>7</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>8</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>9</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>10</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>11</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+									<li class="clearfix">
+										<div class="yj_id" style="width:5%;"><span>12</span></div>
+										<div class="yj_name" style="width:10%;"><span>王**</span></div>
+										<div class="yj_sex" style="width:10%;"><span>男</span></div>
+										<div class="yj_age" style="width:10%;"><span>28</span></div>
+										<div class="yj_phone" style="width:15%;"><span>159****1305</span></div>
+										<div class="yj_THRA yj_detail" style="width:20%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_shsj yj_detail" style="width:15%;"><span>详情<i class="icon_detail"><img src="images/icon_detail.png"></i></span></div>
+										<div class="yj_frequency" style="width:15%;"><span>12345</span></div>
+									</li>
+								</div>
+								</ul>
+							</div>
+							<div class="yjPanel_footer clearfix">
+								<div class="page clearfix">
+									<a href="javascript:return false;" class="disabled">首页</a>
+									<a href="#"><</a>
+									<a href="#" class="active">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#">6</a>
+									<a href="#">7</a>
+									<a href="#">7</a>
+									<a href="#">9</a>
+									<a href="#">></a>
+									<a href="#">尾页</a>
+									<a href="#">总<span>10</span>页</a>
+									<span class="go">跳至&nbsp;&nbsp;<input type="text" value="5">&nbsp;&nbsp;页</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="fade" class="mask_shadow"></div>
+		<!-- 添加用户 start -->
+		<div id="pop" class="popup mainBox userPop" style="display: none;"> 
+			<div class="border_leftTop"></div>
+			<div class="border_rightTop"></div>
+			<div class="border_LeftBottom"></div>
+			<div class="border_rightBottom"></div>
+			<div class="tcPanel">
+				<div class="tcPanel_header clearfix">
+					<div class="title pull-left">后北宫村-添加用户</div>
+					<a class="close pull-right" onclick="closePop('pop','fade')"></a>
+				</div>
+				<div class="tcPanel_body" id="checkbox">
+					<div class="floating-layer"></div>
+					<form id="form1" name="form1" method="post" action="">
+						<ul class="list1" >
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p>
+										<span class="check_span"><input type="checkbox" id="checkAll" style="opacity: 0; position: absolute;"></span>
+									</p>
+								</div>
+								<div class="username" style="width:10%">用户名</div>
+								<div class="sex" style="width:10%">性别</div>
+								<div class="tel" style="width:15%">电话号码</div>
+								<div class="equipment_number" style="width:20%">设备编号</div>
+								<div class="site" style="width:20%">地址</div>
+								<div class="upload_time" style="width:20%">上传时间</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%"></div>
+								<div class="username" style="width:10%">
+									<input type="text">
+								</div>
+								<div class="sex" style="width:10%">
+									<!-- <input type="text"> -->
+									<div class="sxtj_xl addSelect sexSelect">
+										<div class="select">
+											<span class="selectVal" onselectstart="return false">全部</span>
+											<i class="xl-icon"></i>
+											<div class="selectList">
+												<div class="listA-all">
+													<a href="javascript:;" class="listA">全部</a>
+													<a href="javascript:;" class="listA">男</a>
+													<a href="javascript:;" class="listA">女</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tel" style="width:15%"><input type="text"></div>
+								<div class="equipment_number" style="width:20%">
+									<!-- <input type="text"> -->
+									<div class="sxtj_xl addSelect">
+										<div class="select">
+											<span class="selectVal" onselectstart="return false"></span>
+											<i class="xl-icon"></i>
+											<div class="selectList">
+												<div class="listA-all">
+													<!-- <ul>
+														<li><a href="javascript:;" class="listA">111111111</a></li>
+														<li><a href="javascript:;" class="listA">111111111</a></li>
+													</ul> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="site" style="width:20%">
+									<!-- <input type="text"> -->
+									<div class="sxtj_xl addSelect">
+										<div class="select">
+											<span class="selectVal" onselectstart="return false"></span>
+											<i class="xl-icon"></i>
+											<div class="selectList">
+												<div class="listA-all">
+													<a href="javascript:;" class="listA">111111111</a>
+													<a href="javascript:;" class="listA">222222222</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="upload_time" style="width:20%">
+									<input type="text">
+								</div>
+							</li>
+						</ul>
+						<div class="clearfix"></div>
+						<ul class="list2">
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0;filter:alpha(opacity:0); opacity:0;-moz-opacity:0;-khtml-opacity:0;background:rgba(0,0,0,.0);position: absolute;"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0;filter:alpha(opacity:0); opacity:0;-moz-opacity:0;-khtml-opacity:0; "></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+						</ul>
+					</form>
+					<div class="tcPage clearfix">
+						<a href="#">首页</a>
+						<a href="#">上一页</a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">下一页</a>
+						<a href="#">尾页</a>
+						<span>共5页</span>
+						<span>共118条记录</span>
+					</div>
+					<input class="addBar" id="add" type="button" name="add" value="添加" />
+				</div>
+			</div>
+		</div>
+		<!-- 添加用户 end -->
+		<!-- 删除用户 start -->
+		<div id="pop1" class="popup mainBox userPop"> 
+			<div class="border_leftTop"></div>
+			<div class="border_rightTop"></div>
+			<div class="border_LeftBottom"></div>
+			<div class="border_rightBottom"></div>
+			<div class="tcPanel">
+				<div class="tcPanel_header clearfix">
+					<div class="title pull-left">后北宫村-删除用户</div>
+					<a class="close pull-right" onclick="closePop('pop1','fade')"></a>
+				</div>
+				<div class="tcPanel_body" id="checkboxSecond">
+					<form id="form1" name="form1" method="post" action="">
+						<ul class="list1" >
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p>
+										<span class="check_span"><input type="checkbox" id="checkAll" style="opacity: 0"></span>
+									</p>
+								</div>
+								<div class="username" style="width:10%">用户名</div>
+								<div class="sex" style="width:10%">性别</div>
+								<div class="tel" style="width:15%">电话号码</div>
+								<div class="equipment_number" style="width:20%">设备编号</div>
+								<div class="site" style="width:20%">地址</div>
+								<div class="upload_time" style="width:20%">上传时间</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%"></div>
+								<div class="username" style="width:10%"><input type="text"></div>
+								<div class="sex" style="width:10%"><input type="text"></div>
+								<div class="tel" style="width:15%"><input type="text"></div>
+								<div class="equipment_number" style="width:20%"><select><option></option></select></div>
+								<div class="site" style="width:20%"><select><option></option></select></div>
+								<div class="upload_time" style="width:20%"><input type="text"></div>
+							</li>
+						</ul>
+						<ul class="list2">
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="小峪子东路6号">小峪子东路6号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							<li class="clearfix">
+								<div class="selection_box" style="width:5%">
+									<p><span class="check_span"><input type="checkbox" style="opacity: 0"></span></p>
+								</div>
+								<div class="username" style="width:10%">彦**</div>
+								<div class="sex" style="width:10%">男</div>
+								<div class="tel" style="width:15%">137****6833</div>
+								<div class="equipment_number" style="width:20%">JWTH21312020</div>
+								<div class="site text-ellipsis" style="width:20%;text-align:right;padding-right:10px;" title="大华山中路西一巷7号">大华山中路西一巷7号</div>
+								<div class="upload_time" style="width:20%">2018-09-06&nbsp;09:36:20</div>
+							</li>
+							
+						</ul>
+						<div class="tcPage clearfix">
+							<a href="#">首页</a>
+							<a href="#">上一页</a>
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">下一页</a>
+							<a href="#">尾页</a>
+							<span>共5页</span>
+							<span>共118条记录</span>
+						</div>
+						<input class="addBar" id="add" type="button" name="add" value="添加" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 删除用户 end -->
+		<!-- 手环数据 start -->
+		<div id="popSHSJ" class="popup mainBox userPop userPopDetails" style="display: block;">
+			<div class="border_leftTop"></div>
+			<div class="border_rightTop"></div>
+			<div class="border_LeftBottom"></div>
+			<div class="border_rightBottom"></div>
+			<div class="tcPanel">
+				<div class="tcPanel_header clearfix">
+					<div class="title pull-left">王**手环信息<a href="javascript:opener.location.reload()"><i class="icon_fresh"></i></a></div>
+					<a class="close pull-right" onclick="closePop('popSHSJ','fade')"></a>
+				</div>
+				<div class="tcPanel_body">
+					<div class="outBox clearfix">
+						<div class="hd">
+							<ul>
+								<li class="clearfix">
+									<div class="pull-left layout_l">
+										<div id="blood_oxygen" style="width:90px;height:110px;"></div>
+										<div class="layout_l_text">血氧(%)</div>
+									</div>
+									<div class="pull-left layout_l">
+										<div id="blood_pressure" style="width:110px;height:110px;"></div>
+									 	<div class="layout_l_text">血压(mmhg)<i class="arrow_right"><img src="images/icon_arrow_right.png" height="15" width="9"></i></div>
+									</div>
+
+									<div class="pull-left layout_l">
+										<div id="fatigue_degree" style="width:90px;height:110px;"></div>
+										<div class="layout_l_text">疲劳度</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="panelLeft">
+										<div class="panelLeft_header clearfix">
+											<span class="title pull-left">运动</span>
+											<span class="more pull-right">更多</span>
+										</div>
+										<div class="panelLeft_body">
+											<div class="target clearfix">
+												<span>每日快走</span>
+												<span>目标 10000 步</span>
+											</div>
+											<div class="progressBar">
+												<div class="progressBlue">
+													<div class="progress-bar" style="width:70%; background:#005fe3;">
+														<div class="progress-value">3692</div>
+													</div>
+												</div>
+											</div>
+											<div class="target_num clearfix">
+												<div>
+													<span>36</span>
+													<span>千卡</span>
+												</div>
+												<div>
+													<span>6</span>
+													<span>千米</span>
+												</div>
+												<div>
+													<span>4</span>
+													<span>达标天数</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="panelLeft panelLeftSleep">
+										<div class="panelLeft_header clearfix">
+											<span class="title pull-left">睡眠</span>
+											<span class="more pull-right">更多</span>
+										</div>
+										<div class="panelLeft_body">
+											<div class="target1 clearfix">
+												<span class="sleep pull-left">入睡 20:02</span>
+												<span class="wake pull-right">起床 06:02</span>
+											</div>
+											<div class="sleepBox">
+												<div id="sleepCurve" style="width:340px;height:110px;"></div>
+												<div class="sleeplong">睡眠时长9.5小时</div>
+												<div class="sleepclassify">
+													<span>清醒</span>
+													<span>浅眠</span>
+													<span>深眠</span>
+												</div>
+											</div>
+											<div class="target_num clearfix">
+												<div>
+													<span>2小时32分</span>
+													<span class="deep_sleep">深睡</span>
+												</div>
+												<div>
+													<span>6小时02分</span>
+													<span class="shallow_sleep">浅睡</span>
+												</div>
+												<div>
+													<span>8分</span>
+													<span class="sober">清醒</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="clearfix">
+									<div class="panelLeft morning_pulse">
+										<div class="panelLeft_header clearfix">
+											<span class="title pull-left">晨脉</span>
+											<span class="more pull-right">更多</span>
+										</div>
+										<div class="panelLeft_body">
+											<div class="target_num">
+												<span>83次/分钟</span>
+												<span>比上次测量升高2次/分钟，晨脉波动</span>
+											</div>
+											<div class="pulseBar">
+												<div class="pulse_up clearfix">
+													<span>50</span>
+													<span>70</span>
+													<span>80</span>
+													<span>95</span>
+												</div>
+												<div class="pulse_bottom clearfix">
+													<span>过低</span>
+													<span>优良</span>
+													<span>一般</span>
+													<span>较快</span>
+													<span>过快</span>
+												</div>
+												<div class="colorBar">
+													<div class="bar clearfix">
+														<span class="color0"></span>
+														<span class="color50"></span>
+														<span class="color70"></span>
+														<span class="color80"></span>
+														<span class="color95"></span>
+													</div>
+													<div class="progress-bar" style="width:63%; background:transparent;">
+														<div class="progress-value"><i class="icon_cm"></i></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bd">
+							<!-- inBox S -->
+							<div class="inBox">
+								<div class="inHd">
+									<div class="title">血压历史记录</div>
+									<ul class="clearfix">
+										<li>日</li>
+										<li>周</li>
+										<li>月</li>
+										<li>年</li>
+									</ul>
+								</div>
+								<div class="inBd">
+									<div class="slideBox1">
+										<a class="sPrev" href="javascript:void(0);"></a>
+										<ul>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															2017/11/01
+														</div>
+														<div class="display_data">
+															<div class="djxl">叠加心率</div>
+															<div id="bloodPressureDay" class="bloodPressureRight" style="width:367px;height:295px;"></div>
+															<div id="bloodPressureHeartDay" class="bloodPressureHeartRight" style="width:370px;height:295px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusBar">
+															<div class="colorBar">
+																<div class="pulse_up pulse_up1 clearfix">
+																	<span>收缩压</span>
+																	<span>90</span>
+																	<span>120</span>
+																	<span>140</span>
+																	<span>160</span>
+																	<span>180</span>
+																</div>
+																<div class="pulse_bottom pulse_bottom1 clearfix">
+																	<span>舒张压</span>
+																	<span>60</span>
+																	<span>80</span>
+																	<span>90</span>
+																	<span>100</span>
+																	<span>110</span>
+																</div>
+																<div class="bar1 clearfix">
+																	<span class="color0">偏低</span>
+																	<span class="color50">正常</span>
+																	<span class="color70">偏高</span>
+																	<span class="color80">轻度</span>
+																	<span class="color95">中度</span>
+																	<span class="color100">重度</span>
+																</div>
+															</div>
+														</div>
+														<div class="tips">本评价标准源自《中国高血压防治指南2017版》</div>
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_up">最高值</span>
+																	<span class="r_b">136/89</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_low">最低值</span>
+																	<span class="r_b">96/46</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_average">平均值</span>
+																	<span class="r_b">120/86</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_error">异常次数</span>
+																	<span class="r_b">86</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															2017/11/02
+														</div>
+														<div class="display_data">
+															<div class="djxl">叠加心率</div>
+															<div id="bloodPressureDay" class="bloodPressureRight" style="width:367px;height:295px;"></div>
+															<div id="bloodPressureHeartDay" class="bloodPressureHeartRight" style="width:370px;height:295px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusBar">
+															<div class="colorBar">
+																<div class="pulse_up pulse_up1 clearfix">
+																	<span>收缩压</span>
+																	<span>90</span>
+																	<span>120</span>
+																	<span>140</span>
+																	<span>160</span>
+																	<span>180</span>
+																</div>
+																<div class="pulse_bottom pulse_bottom1 clearfix">
+																	<span>舒张压</span>
+																	<span>60</span>
+																	<span>80</span>
+																	<span>90</span>
+																	<span>100</span>
+																	<span>110</span>
+																</div>
+																<div class="bar1 clearfix">
+																	<span class="color0">偏低</span>
+																	<span class="color50">正常</span>
+																	<span class="color70">偏高</span>
+																	<span class="color80">轻度</span>
+																	<span class="color95">中度</span>
+																	<span class="color100">重度</span>
+																</div>
+															</div>
+														</div>
+														<div class="tips">本评价标准源自《中国高血压防治指南2017版》</div>
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_up">最高值</span>
+																	<span class="r_b">136/89</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_low">最低值</span>
+																	<span class="r_b">96/46</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_average">平均值</span>
+																	<span class="r_b">120/86</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_error">异常次数</span>
+																	<span class="r_b">86</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a class="sNext" href="javascript:void(0);"></a>
+									</div>
+									<div class="slideBox1">
+										<a class="sPrev" href="javascript:void(0);"></a>
+										<ul>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															2017/10/26 ~ 2017/11/01
+														</div>
+														<div class="display_data">
+															<div class="djxl">叠加心率</div>
+															<div id="bloodPressureDay" class="bloodPressureRight" style="width:367px;height:295px;"></div>
+															<div id="bloodPressureHeartDay" class="bloodPressureHeartRight" style="width:370px;height:295px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusBar">
+															<div class="colorBar">
+																<div class="pulse_up pulse_up1 clearfix">
+																	<span>收缩压</span>
+																	<span>90</span>
+																	<span>120</span>
+																	<span>140</span>
+																	<span>160</span>
+																	<span>180</span>
+																</div>
+																<div class="pulse_bottom pulse_bottom1 clearfix">
+																	<span>舒张压</span>
+																	<span>60</span>
+																	<span>80</span>
+																	<span>90</span>
+																	<span>100</span>
+																	<span>110</span>
+																</div>
+																<div class="bar1 clearfix">
+																	<span class="color0">偏低</span>
+																	<span class="color50">正常</span>
+																	<span class="color70">偏高</span>
+																	<span class="color80">轻度</span>
+																	<span class="color95">中度</span>
+																	<span class="color100">重度</span>
+																</div>
+															</div>
+														</div>
+														<div class="tips">本评价标准源自《中国高血压防治指南2017版》</div>
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_up">最高值</span>
+																	<span class="r_b">136/89</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_low">最低值</span>
+																	<span class="r_b">96/46</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_average">平均值</span>
+																	<span class="r_b">120/86</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_error">异常次数</span>
+																	<span class="r_b">86</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															2017/11/01 ~ 2017/11/08
+														</div>
+														<div class="display_data">
+															<div class="djxl">叠加心率</div>
+															<div id="bloodPressureDay" class="bloodPressureRight" style="width:367px;height:295px;"></div>
+															<div id="bloodPressureHeartDay" class="bloodPressureHeartRight" style="width:370px;height:295px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusBar">
+															<div class="colorBar">
+																<div class="pulse_up pulse_up1 clearfix">
+																	<span>收缩压</span>
+																	<span>90</span>
+																	<span>120</span>
+																	<span>140</span>
+																	<span>160</span>
+																	<span>180</span>
+																</div>
+																<div class="pulse_bottom pulse_bottom1 clearfix">
+																	<span>舒张压</span>
+																	<span>60</span>
+																	<span>80</span>
+																	<span>90</span>
+																	<span>100</span>
+																	<span>110</span>
+																</div>
+																<div class="bar1 clearfix">
+																	<span class="color0">偏低</span>
+																	<span class="color50">正常</span>
+																	<span class="color70">偏高</span>
+																	<span class="color80">轻度</span>
+																	<span class="color95">中度</span>
+																	<span class="color100">重度</span>
+																</div>
+															</div>
+														</div>
+														<div class="tips">本评价标准源自《中国高血压防治指南2017版》</div>
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_up">最高值</span>
+																	<span class="r_b">136/89</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_low">最低值</span>
+																	<span class="r_b">96/46</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_average">平均值</span>
+																	<span class="r_b">120/86</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_error">异常次数</span>
+																	<span class="r_b">86</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a class="sNext" href="javascript:void(0);"></a>
+									</div>
+								</div>
+							</div>
+							<!-- inBox S -->
+							<!-- inBox S -->
+							<div class="inBox">
+								<div class="inHd">
+									<div class="title">运动历史记录</div>
+									<ul class="clearfix">
+										<li>日</li>
+										<li>周</li>
+										<li>月</li>
+										<li>年</li>
+									</ul>
+								</div>
+								<div class="inBd">
+									<div class="slideBox1">
+										<a class="sPrev sPrev1"  href="javascript:void(0);"></a>
+										<ul>
+											<li>
+										        <div class="panelRight" style="width:367px;">
+											<div class="panelRight_header sprotHistory">
+												<div class="title">
+													2017/10/30
+												</div>
+												<div class="display_data">
+													<div id="sportHistoryDay" class="sportHistoryDay" style="width:367px;height:170px;"></div>
+												</div>
+											</div>
+											<div class="panelRight_body">
+												<div class="statusTip">
+													<div class="transverse_line"></div>
+													<div class="ertical_line"></div>
+													<div class="clearfix">
+														<div class="status_r pull-left">
+															<span class="r_t r_step">步数(步)</span>
+															<span class="r_b">6.5</span>
+														</div>
+														<div class="status_r pull-right">
+															<span class="r_t r_avstep">平均步数(步)</span>
+															<span class="r_b">2</span>
+														</div>
+													</div>
+													<div class="clearfix">
+														<div class="status_r pull-left">
+															<span class="r_t r_mileage">里程(公里)</span>
+															<span class="r_b">8.5</span>
+														</div>
+														<div class="status_r pull-right">
+															<span class="r_t r_consume">消耗(千卡)</span>
+															<span class="r_b">136</span>
+														</div>
+													</div>
+												</div>
+											</div>
+												</div>
+											</li>
+										</ul>
+										<a class="sNext sNext1" href="javascript:void(0);"></a>
+									</div>
+								</div>
+							</div>
+							<!-- inBox S -->
+							<!-- inBox S -->
+							<div class="inBox">
+								<div class="inHd">
+									<div class="title">睡眠历史记录</div>
+									<ul class="clearfix">
+										<li>日</li>
+										<li>周</li>
+										<li>月</li>
+										<li>年</li>
+									</ul>
+								</div>
+								<div class="inBd">
+									<div class="slideBox1">
+										<a class="sPrev"  href="javascript:void(0);"></a>
+										<a class="sNext" href="javascript:void(0);"></a>
+										<ul>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															2017/10/30
+														</div>
+														<div class="display_data">
+															<div id="sleepHistoryDay" class="sleepHistoryDay" style="width:367px;height:170px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_totalsleepduration">睡眠总时长</span>
+																	<span class="r_b">6.5</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_longsleep">深睡时长</span>
+																	<span class="r_b">2</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_shortsleep">浅睡时长</span>
+																	<span class="r_b">8.5</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_sobertime">清醒时长</span>
+																	<span class="r_b">136</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panelRight_foot">
+														<div class="sleepTime clearfix">
+															<div class="s_l pull-left s_l_tj">
+																<span>20:02</span>
+																<span>入睡时间</span>
+															</div>
+															<div class="s_l pull-right">
+																<span>06:02</span>
+																<span>起床时间</span>
+															</div>
+														</div>
+														<div class="recommend_list clearfix">
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>推荐程度</span></div>
+																<div><span class="tj colorblock">推荐</span></div>
+																<div><span class="jtj colorblock">较推荐</span></div>
+																<div><span class="jbtj colorblock">较不推荐</span></div>
+																<div><span class="btj colorblock">不推荐</span></div>
+																<div><span class="jbj colorblock">极不推荐</span></div>
+															</div>
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>入睡时间</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+															</div>
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>起床时间</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										
+									</div>
+									<div class="slideBox1">
+										<a class="sPrev"  href="javascript:void(0);"></a>
+										<ul>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header">
+														<div class="title">
+															<a class="icon_arrow_jt prev_r"></a>
+															<a class="icon_arrow_jt next_r"></a>
+															2017/10/30~2017/11/06
+														</div>
+														<div class="display_data">
+															<div id="sleepHistoryWeek" class="sleepHistoryWeek" style="width:367px;height:170px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_totalsleepduration">睡眠总时长</span>
+																	<span class="r_b">6.5</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_longsleep">深睡时长</span>
+																	<span class="r_b">2</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_shortsleep">浅睡时长</span>
+																	<span class="r_b">8.5</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_sobertime">清醒时长</span>
+																	<span class="r_b">136</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="panelRight_foot">
+														<div class="sleepTime clearfix">
+															<div class="pull-left" style="position: relative;">
+																<div id="night" class="night" style="width:90px;height:90px;"></div>
+																<span class="rssj">入睡时间</span>
+																<div class="sjb_l">
+																	<span class="sjb_tj">20%</span>
+																	<span class="sjb_jtj">20%</span>
+																	<span class="sjb_jbtj">20%</span>
+																	<span class="sjb_btj">20%</span>
+																	<span class="sjb_jbj">20%</span>
+																</div>
+															</div> 
+															<div class="pull-right" style="position: relative;">
+																<div id="morning" class="morning" style="width:90px;height:90px;"></div>
+																<span class="qcsj">起床时间</span>
+																<div class="sjb_r">
+																	<span class="sjb_tj">20%</span>
+																	<span class="sjb_jtj">20%</span>
+																	<span class="sjb_jbtj">20%</span>
+																	<span class="sjb_btj">20%</span>
+																	<span class="sjb_jbj">20%</span>
+																</div>
+															</div>
+														</div>
+														<div class="recommend_list clearfix">
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>推荐程度</span></div>
+																<div><span class="tj colorblock">推荐</span></div>
+																<div><span class="jtj colorblock">较推荐</span></div>
+																<div><span class="jbtj colorblock">较不推荐</span></div>
+																<div><span class="btj colorblock">不推荐</span></div>
+																<div><span class="jbj colorblock">极不推荐</span></div>
+															</div>
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>入睡时间</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+																<div><span>21:00~23:00</span></div>
+															</div>
+															<div class="pull-left" style="width:33.33%;">
+																<div><span>起床时间</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+																<div><span>6:00~8:00</span></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a class="sNext" href="javascript:void(0);"></a>
+									</div>
+								</div>	
+							</div>
+							<!-- inBox S -->
+
+							<!-- inBox S -->
+							<div class="inBox">
+								<div class="inHd">
+									<div class="title">晨脉历史记录</div>
+									<ul class="clearfix pulse_ul">
+										<li>周</li>
+										<li>月</li>
+										<li>年</li>
+									</ul>
+								</div>
+								<div class="inBd">
+									<div class="slideBox1">
+										<a class="sPrev sPrev1"  href="javascript:void(0);"></a>
+										<ul>
+											<li>
+												<div class="panelRight">
+													<div class="panelRight_header sprotHistory pulseHistory">
+														<div class="title">
+															2017/10/30
+														</div>
+														<div class="display_data">
+															<div id="pulseHistoryWeek" class="pulseHistoryWeek" style="width:367px;height:250px;"></div>
+														</div>
+													</div>
+													<div class="panelRight_body">
+														<div class="pulseBar">
+															<div class="pulse_up clearfix">
+																<span>50</span>
+																<span>70</span>
+																<span>80</span>
+																<span>95</span>
+															</div>
+															<div class="pulse_bottom clearfix">
+																<span>过低</span>
+																<span>优良</span>
+																<span>一般</span>
+																<span>较快</span>
+																<span>过快</span>
+															</div>
+															<div class="colorBar colorBar1">
+																<div class="bar clearfix">
+																	<span class="color0"></span>
+																	<span class="color50"></span>
+																	<span class="color70"></span>
+																	<span class="color80"></span>
+																	<span class="color95"></span>
+																</div>
+															</div>
+														</div>
+														<div class="statusTip">
+															<div class="transverse_line"></div>
+															<div class="ertical_line"></div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_up">最高晨脉</span>
+																	<span class="r_b">136</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_low">最低晨脉</span>
+																	<span class="r_b">46</span>
+																</div>
+															</div>
+															<div class="clearfix">
+																<div class="status_r pull-left">
+																	<span class="r_t r_average">平均晨脉</span>
+																	<span class="r_b">86</span>
+																</div>
+																<div class="status_r pull-right">
+																	<span class="r_t r_error">异常次数</span>
+																	<span class="r_b">86</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a class="sNext sNext1"  href="javascript:void(0);"></a>
+									</div>
+								</div>
+							</div>
+							<!-- inBox S -->
+						</div><!-- bd E -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 手环数据 end -->
+
+		<!-- THRA检测数据 start -->
+		<div id="popTHRA" class="popup mainBox userPop">
+			<div class="border_leftTop"></div>
+			<div class="border_rightTop"></div>
+			<div class="border_LeftBottom"></div>
+			<div class="border_rightBottom"></div>
+			<div class="tcPanel">
+				<div class="tcPanel_header clearfix">
+					<div class="title pull-left">王**健康风险评估报告<a href="javascript:opener.location.reload()"><i class="icon_fresh"></i></a></div>
+					<a class="close pull-right" onclick="closePop('popTHRA','fade')"></a>
+				</div>
+				<div class="tcPanel_body">
+					<div class="layout_top clearfix">
+						<div class="layout_t_l pull-left">
+							<div class="panelTop">
+								<div class="panelTop_header">
+									<div class="title">用户记录</div>
+								</div>
+								<div class="panelTop_body">
+									<div class="container1">
+										<div class="div_scroll content content_userRecord">
+								           <ul class="details_list list_fcfff">
+								                <li class="clearfix active">
+								                	<span class="name">张**</span>
+								                	<span class="date">2018-04-10</span>
+								                	<span class="time">16:36</span>
+								                </li>
+								                <li class="clearfix">
+								                	<span class="name">张**</span>
+								                	<span class="date">2018-04-10</span>
+								                	<span class="time">16:36</span>
+								                </li>
+								                <li class="clearfix">
+								                	<span class="name">张**</span>
+								                	<span class="date">2018-04-10</span>
+								                	<span class="time">16:36</span>
+								                </li>
+								              <!--  <li class="clearfix">
+								              	<span class="name">张**</span>
+								              	<span class="date">2018-04-10</span>
+								              	<span class="time">16:36</span>
+								              </li> -->
+								           	</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="layout_t_r pull-right">
+							<canvas id="bodyScore" class="bodyscore" width="200" height="200" data-score="89.4"></canvas>
+							<span class="safetitle">身体状态当前得分</span>
+						</div>
+					</div>
+					<div class="layout_bottom slideBox clearfix">
+						<div class="hd layout_b_l pull-left">
+							<div class="container1">
+								<div class="div_scroll content content_medical">
+									<ul>
+										<li>
+											<div class="panelBottom">
+												<div class="panelBottom_header">
+													<div class="title">功能医学评估</div>
+												</div>
+												<div class="panelBottom_body">
+													<div class="person_model">
+														<img src="images/person112.png" style="width:329px; height:429px;">
+														<span class="needfocus nfm">需要关注：3项</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<span class="needfocus sjxt">需要关注：3项</span>
+										</li>
+										<li>
+											<span class="needfocus hxxt">需要关注：3项</span>
+										</li>
+										<li>
+											<!-- <span class="needfocus myxt femyxt">需要关注：3项</span> -->
+											<span class="needfocus femyxt">需要关注：3项</span>
+										</li>
+										<li>
+											<!-- <span class="needfocus xhxt fexhxt">需要关注：3项</span> -->
+											<span class="needfocus fexhxt">需要关注：3项</span>
+										</li>
+										<li>
+											<!-- <span class="needfocus xxgxt fexxgxt">需要关注：3项</span> -->
+											<span class="needfocus fexxgxt">需要关注：3项</span>
+										</li>
+										<li>
+											<span class="needfocus ggxt">需要关注：3项</span>
+										</li>
+										<li>
+											<!-- <span class="needfocus mnxt femnxt">需要关注：3项</span> -->
+											<span class="needfocus femnxt">需要关注：3项</span>
+										</li>
+										<li>
+											<div class="panelBottom">
+												<div class="panelBottom_header">
+													<div class="title">人体内环境分析</div>
+												</div>
+												<div class="panelBottom_body mheight">
+													<div class="fxblock lzfx pull-left">
+														<i class="icon icon_lzfx"></i>
+														<span>离子分析</span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="fxblock sjph">
+												<i class="icon icon_sjph"></i>
+												<span>酸碱平衡</span>
+											</div>
+										</li>
+										<li>
+											<div class="fxblock zyj">
+												<i class="icon icon_zyj"></i>
+												<span>自由基</span>
+											</div>
+										</li>
+										<li>
+											<div class="fxblock sjdz">
+												<i class="icon icon_sjdz"></i>
+												<span>神经递质</span>
+											</div>
+										</li>
+										<li>
+											<div class="fxblock shzb">
+												<i class="icon icon_shzb"></i>
+												<span>生化指标</span>
+											</div>
+										</li>
+										<li>
+											<div class="fxblock jssp">
+												<i class="icon icon_jssp"></i>
+												<span>激素水平</span>
+											</div>
+										</li>
+
+										<li>
+											<div class="panelBottom">
+												<div class="panelBottom_header">
+													<div class="title">疾病风险预测</div>
+												</div>
+												<div class="panelBottom_body">
+													<div class="person_model">
+														<img src="images/pic1.png" style="width:214px; height:180px;margin-left:60px;">
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="bd layout_b_r pull-right">
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">内分泌系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<div class="picouter">
+												<div class="picinner">
+													<img src="images/pic6.png">
+												</div>
+											</div>
+										</div>
+										<div class="pull-right">
+											<canvas id="canvas1" width="155" height="155" data-score="90"></canvas>
+											<span class="safetitle" style="display: block;position: relative;width:155px;text-align: center;font-size:14px;color:#11d0d8;bottom:60px;left:50%;margin-left:-78px;">身体状态当前得分</span>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">内分泌系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">神经系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">神经系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">呼吸系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">呼吸系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">免疫系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">免疫系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">消化系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">消化系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">心血管系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">心血管系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">骨骼系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">骨骼系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">泌尿系统状态报告</div>
+									<div class="report_pic clearfix">
+										<div class="pull-left">
+											<img src="images/pic6.png" style="width:104px;height:118px;">
+										</div>
+										<div class="pull-right">
+											<div class="" style="width:130px;height:100px;"></div>
+										</div>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含9项，超出范围为2项，占22%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">泌尿系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<span style="display: block;margin-top: 20px;">本系统测试包含3个部分，如下：</span>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc752d;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#cc0c9b;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+													<div class="info_aside">
+														<div class="clearfix" style="width:100%;">
+															<div class="pull-left" style="width:15%;color:#fff;">胃部</div>
+															<div class="pull-left" style="width:55%;">
+																<div class="skillbar clearfix " data-percent="66%">
+																	<div class="skillbar-bar" style="background:#009a52;"></div>
+																</div> 
+											                							</div>
+											                							<div class="pull-left" style="width:10%;text-align: center;">66</div>
+															<div class="pull-left" style="width:20%;text-align: center;">亚健康</div>
+														</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:15%;">上次值</span>
+																<span class="" style="width:15%;">本次值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:20%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="" style="width:15%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">离子分析</div>
+									<div class="report_pic">
+										<canvas id="canvas1" width="155" height="155" data-score="90"></canvas>
+										<span class="safetitle" style="display: block;position: relative;width:155px;text-align: center;font-size:14px;color:#11d0d8;bottom:60px;left:50%;margin-left:-78px;">离子分析当前得分</span>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含7项，超出范围为3项，占42%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="all_info">
+													<div class="title">泌尿系统的当前状态</div>
+													<div class="details">
+														<span>呼吸功能轻度改变</span>
+														<span>血碳酸偏低</span>
+														<span>血碳酸偏高</span>
+													</div>
+												</div>
+												<div class="alone_info">
+													<div class="info_aside">
+														<ul class="info_process clearfix">
+															<span class="numbottom num01">-15</span>
+															<span class="numbottom num02">-10</span>
+															<span class="numbottom num03">-5</span>
+															<span class="numbottom num04">0</span>
+															<span class="numbottom num05">5</span>
+															<span class="numbottom num06">10</span>
+															<span class="numbottom num07">15</span>
+															<li class="info_negative">
+																<div class="info_box">
+																	<div class="skillbar clearfix" data-percent="20%">
+																		<div class="skillbar-bar" style="background:#ae20ba;"></div>
+																	</div> 
+																</div>
+															</li>
+															<li class="info_negative">
+																<div class="info_box">
+																	<div class="skillbar clearfix" data-percent="20%">
+																		<div class="skillbar-bar" style="background:#ae20ba;"></div>
+																	</div> 
+																</div>
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="80%">
+																	<div class="skillbar-bar" style="background:#7703ba;"></div>
+																</div> 
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="60%">
+																	<div class="skillbar-bar" style="background:#047a3e;"></div>
+																</div> 
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="40%">
+																	<div class="skillbar-bar" style="background:#b1067d;"></div>
+																</div> 
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="10%">
+																	<div class="skillbar-bar" style="background:#a15e28;"></div>
+																</div> 
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="90%">
+																	<div class="skillbar-bar" style="background:#b48707;"></div>
+																</div> 
+															</li>
+															<li class="info_positive">
+																<div class="skillbar clearfix" data-percent="30%">
+																	<div class="skillbar-bar" style="background:#b1383c;"></div>
+																</div> 
+															</li>
+														</ul>
+														<ul class="info_details info_details1">
+															<li class="clearfix">
+																<span class="" style="width:20%;">名称</span>
+																<span class="" style="width:20%;">上次</span>
+																<span class="" style="width:20%;">本次</span>
+																<span class="" style="width:20%;">正常值</span>
+																<span class="" style="width:20%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgna" style="width:20%;">钠</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgja" style="width:20%;">钾</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bglv" style="width:20%;">氯</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgme" style="width:20%;">镁</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgga" style="width:20%;">钙</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgli" style="width:20%;">磷</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgte" style="width:20%;">铁</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">酸碱平衡</div>
+									<div class="report_pic">
+										<canvas id="canvas1" width="155" height="155" data-score="90"></canvas>
+										<span class="safetitle" style="display: block;position: relative;width:155px;text-align: center;font-size:14px;color:#11d0d8;bottom:60px;left:50%;margin-left:-78px;">酸碱平衡当前得分</span>
+									</div>
+									<div class="info_tip">
+										<span>本系统测试共包含7项，超出范围为3项，占42%</span>
+									</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report">
+											<div class="report_info">
+												<div class="alone_info">
+													<div class="info_aside">
+														<canvas id="myChartOne" width="320" height="300" style="width:320px;margin-left:20px;"></canvas>
+														
+
+														 <div style="position: absolute;z-index: 11;top: 0">
+					                                       <span style="position: absolute;color: #4E4E4E;top:115px;left: 22px;display: block;">ISBE</span>
+					                                        <span style="position: absolute;color: #4E4E4E;top: 156px;left: 22px;display: block;">mM</span>
+					                                       <span style="position: absolute;color: #4E4E4E;top: 287px;left: 20px;display: block;width: 42px;height: 48px;line-height: 38px;text-align: right;background: #ffffff;">iPCO2</span>
+					                                        <span style="position: absolute;color: #4E4E4E;top: 287px;left: 276px;display: block;width:64px;height: 40px;background: #ffffff;line-height: 15px;">mmHg</span>
+					                                         <span style="position: absolute;color: #4E4E4E;top: 300px;left: 276px;display: block;width:64px;height: 35px;line-height: 15px; background: #fff;">kPa</span>
+					                                       <span style="position: absolute;color: #4E4E4E;top: 220px;left: 285px;display: block;width:60px;height: 50px;line-height: 10px;">pH</span>
+					                                        <span style="position: absolute;top: 300px;left: 62px;font-size: 8px;color: #4E4E4E; display: inline-block;background: #fff;padding:10px;line-height: 15px;">2.7</span>
+					                                        <span style="position: absolute;top: 300px;left: 92px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px;line-height: 15px;">4.0</span>
+					                                        <span style="position: absolute;top: 300px;left: 122px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px;line-height: 15px;">5.3</span>
+					                                        <span style="position: absolute;top: 300px;left: 151px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px;line-height: 15px;">6.7</span>
+					                                        <span style="position: absolute;top: 300px;left: 179px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px;line-height: 15px;">8.0</span>
+					                                        <span style="position: absolute;top: 300px;left: 208px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px;line-height: 15px;">9.3</span>
+					                                        <span style="position: absolute;top: 300px;left: 242px;font-size: 8px;color: #4E4E4E;display: inline-block;background: #fff;padding:10px 5px;line-height: 15px;">10.7</span>
+					                                    </div>
+
+														<ul class="info_details info_details1">
+															<li class="clearfix">
+																<span class="" style="width:20%;">名称</span>
+																<span class="" style="width:20%;">上次</span>
+																<span class="" style="width:20%;">本次</span>
+																<span class="" style="width:20%;">正常值</span>
+																<span class="" style="width:20%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgna" style="width:20%;">钠</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgja" style="width:20%;">钾</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bglv" style="width:20%;">氯</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgme" style="width:20%;">镁</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgga" style="width:20%;">钙</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgli" style="width:20%;">磷</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+															<li class="clearfix">
+																<span class="bgcol bgte" style="width:20%;">铁</span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="" style="width:20%;">-5</span>
+																<span class="" style="width:20%;">-15 ~ +5</span>
+																<span class="" style="width:20%;">正常</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panelBottom">
+								<div class="panelBottom_header">
+									<div class="title">疾病风险预测</div>
+								</div>
+								<div class="panelBottom_body">
+									<div class="container1">
+										<div class="div_scroll content content_report1">
+											<div class="report_info">
+												<div class="info_classify">
+													<ul class="clearfix jbfx_tip clearfix">
+														<li class="icon icon_t_l">新生活力的功能状态</li>
+														<li class="icon icon_t_r">标准健康的功能状态</li>
+														<li class="icon icon_m_l">可自我修复的功能状态</li>
+														<li class="icon icon_m_r">开始衰竭的功能状态</li>
+														<li class="icon icon_b_l">透支到受损的功能状态</li>
+														<li class="icon icon_b_r">透支到危机的功能状态</li>
+													</ul>
+												</div>
+												<div class="tp_list">
+													<ul clsss="clearfix">
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div> 
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+														<li>
+															<div class="li_pic">
+																<img src="images/pic2.png">
+															</div>
+															<div class="li_text text-ellipsis">
+																肩部深层激活
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="alone_info">
+													<div class="info_aside">
+														<div class="title">疾病预测</div>
+														<ul class="info_details">
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:30%;text-align: left;">名称</span>
+																<span class="" style="width:15%;">预警</span>
+																<span class="" style="width:20%;">检测值</span>
+																<span class="text-ellipsis" style="width:35%;">评价</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:30%;text-align: left">右侧颅内血管</span>
+																<span class="" style="width:15%;"><b class="bgblock qz">潜在</b></span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:30%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock zy">注意</b></span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+															<li class="clearfix">
+																<span class="text-ellipsis" style="width:30%;text-align: left">器官附近</span>
+																<span class="" style="width:15%;"><b class="bgblock jg">警告</b></span>
+																<span class="" style="width:20%;">-16</span>
+																<span class="text-ellipsis" style="width:35%;">疾病风险隐患</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- THRA检测数据 end -->
+	</div>
+</div>
+
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script> -->
+<!-- <script src="js/echarts.common.min.js"></script> -->
+<script src="js/mCustomScrollbar.concat.min.js"></script>
+<script src="js/echarts_new.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<!-- <script src="http://demo.aijiacms.com/skin/default/js/sea.js"></script> -->
+
+<script src="js/dropDown.js"></script>
+<script src="js/checkbox.min.js"></script>
+<!-- <script src="js/checkbox.js"></script> -->
+<script src="js/datastatistics/blood_pressure.js"></script>
+<script src="js/datastatistics/sleepCurve.js"></script>
+<script src="js/datastatistics/bloodPressureDay.js"></script>
+<script src="js/datastatistics/bloodPressureHeartDay.js"></script>
+<script src="js/datastatistics/sportHistoryDay.js"></script>
+<script src="js/datastatistics/sleepHistoryDay.js"></script>
+<script src="js/datastatistics/sleepHistoryWeek.js"></script>
+<script src="js/datastatistics/pulseHistoryWeek.js"></script>
+<script src="js/datastatistics/morning.js"></script>
+<script src="js/datastatistics/night.js"></script>
+<script src="js/datastatistics/bodyScore.js"></script>
+<script src="js/chart.js"></script>
+
+<script>    
+	$(".slideBox").slide({ trigger:"click"});
+	$(".slideTxtBox").slide();
+
+	$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')},3000);
+	});
+
+	(function($){
+		$(window).load(function(){
+			$(".content").mCustomScrollbar({
+				scrollButtons:{
+					enable:true
+				},
+			});
+		});
+	})(jQuery);
+
+
+
+    function showPop(show_div,bg_div){
+		document.getElementById(show_div).style.display="block";
+        document.getElementById(bg_div).style.display="block";
+        var bgdiv = document.getElementById(bg_div);
+        bgdiv.style.width = document.body.scrollWidth;
+        $("#"+bg_div).height($(document).height());
+	}
+	 function closePop(show_div,bg_div){
+        document.getElementById(show_div).style.display="none";
+        document.getElementById(bg_div).style.display="none";
+    }
+    
+	var flag = true;
+	$('.bloodPressureHeartRight').hide();
+	$('.djxl').bind('click',function(){
+	    if (flag) {
+	    	$(this).siblings('.bloodPressureHeartRight').show();
+	    	$(this).siblings('.bloodPressureRight').hide();
+	    	$(this).html('取消叠加');
+	    	$(this).css({'background':'transparent','border':'1px solid #0050bf'});
+	        flag = false
+	    } else {
+	        $(this).siblings('.bloodPressureHeartRight').hide();
+	    	$(this).siblings('.bloodPressureRight').show();
+	    	$(this).html('心率叠加');
+	    	$(this).css({'background':'#0050bf','border':'1px solid #0050bf'});
+	        flag = true
+	    }
+	});
+
+	$(function(){
+	//有全选且点文字可以选中
+	$("#checkbox").selectCheck();
+	$("#checkboxSecond").selectCheck();
+
+	//无全选且只能点击勾选框
+	$("#checkbox1").selectCheck({
+		allId:null,
+		parentSelect:null
+	});
+});
+    	
+
+	/* 外层outBox左滚动切换 */
+	jQuery(".outBox").slide({ trigger:"click", effect:"left" });
+	
+    /* 内层inBox渐显切换，注意titCell、mainCell等不能与外层相同 */
+	jQuery(".inBox").slide({titCell:".inHd li",mainCell:".inBd"});
+	/* 内层图片滚动切换 */
+    /*jQuery(".inBox .slideBox1").slide();*/
+    jQuery(".inBox .slideBox1").slide({mainCell:"ul",vis:1,prevCell:".sPrev",nextCell:".sNext",effect:"leftLoop"});
+	/*$("#popSHSJ").hide();*/
+	Anm = new aNmForSjPH;
+    Anm.doC('myChartOne');
+    Anm.makeTheCircleCenter(-2.00,42.40, 5, 10, 15);
+   
+</script>
+</body>
+</html>

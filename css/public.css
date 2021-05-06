@@ -1,0 +1,207 @@
+/* @font-face {
+	font-family:"Source Han Sans CN";
+  	src:url('../css/fontface/fonts/SourceHanSansCN-Normal.ttf');
+  	src:url('../css/fontface/fonts/SourceHanSansCN-Normal.ttf') format('truetype');
+  	font-weight: normal;
+  	font-style: normal;
+} */
+body{
+	font-family: 'SimHei';
+}
+body html img h1 h2 h3 h4 h5 span font img ul li a{
+	padding:0;
+	margin:0;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	color:#fff !important;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none !important;
+}
+body{display:block;height:1076px;background: url("../images/bgcolor.png") repeat-x;color:#5affff;font-size:14px;font-color:#cfcfcf;}
+font{font-family:SOURCEHANSANSCN;font-size:20px; color:#00ffff;}
+.clearfix:after {
+    content : " ";
+    display : block ;
+    height : 0 ;
+    clear : both ;
+    visibility : hidden ;
+}
+i{
+	font-style: normal;
+}
+/**头部样式**/
+.header{width:100%;min-width:1899px;height:90px;background-image:url("../images/bgtitle.png");background-repeat: repeat-x; position: relative; margin-bottom: 40px;}
+.header_inner{
+	width:1440px;
+	height:140px;
+	background: url("../images/bg_center_title.png") no-repeat center top;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left:-720px;
+}
+.header_inner .title{
+	width:1440px;
+	height:140px;
+	position: relative;
+}
+.header_inner .title img{
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	margin:auto;
+	position: absolute;
+}
+/* 各个街道的标头 */
+/*.header_inner .title{
+	display:block;
+	height:78px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-39px;
+}
+.title.dhsz-title{
+	width:609px;
+	margin-left:-304.5px;
+}
+.title.blz-title{
+	width:733px;
+	margin-left:-366.5px;
+}
+.title.nmg-title{
+    width:811px;
+    margin-left:-405.5px;
+}
+.title.dhs_base, .title.hhxy-base, .title.qsjd_base, .title.yggj_base{
+	width:366px;
+	margin-left:-183px;
+}
+.title.ymj_base{
+	width:332px;
+	margin-left:-166px;
+}
+.title.hdq-title, .title.gys-title, .title.nmq-title{
+	width:650px;
+	margin-left:-325px;
+}
+.title.pgq-title{
+    width:568px;
+    margin-left:-284px;
+}
+.title.qsjd-title{
+	width:691px;
+	margin-left:-345.5px;
+}
+.title.ymj-title{
+    width:649px;
+    margin-left:-324.5px;
+}
+.title.wlcb-title{
+	width:730px;
+	margin-left:-365px;
+}
+.title.hhxy-title{
+    width:692px;
+    margin-left:-346px;
+}
+.title.hhxy_base{
+	width:366px;
+	margin-left:-183px;
+}
+.title.hhxy_ssjcfx{
+    width:448px;
+    margin-left:-224px;
+}
+.title.ymj_ssjcfx{
+    width:405px;
+    margin-left:-202.5px;
+}
+.title.nmgyjwl_ssjcfx{
+    width:567px;
+    margin-left:-283.5px;
+}
+.title.jnq-title, .title.hrq-title{
+    width:650px;
+    margin-left:-325px;
+}
+.title.nmgyjwl_base{
+    width:484px;
+    margin-left:-242px;
+}
+.title.gzstyj_base{
+	width:446px;
+	margin-left:-223px;
+}
+.title.gzstyj_ssjcfx{
+	width:530px;
+	margin-left:-264.5px;
+}
+.title.yggj_ssjcfx{
+	width:448px;
+	margin-left:-224px;
+}*/
+
+/* 头部信息 */
+.header_left{
+	position: absolute;
+	left:48px;
+	top:25px;
+} 
+.header_right{
+	position: absolute;
+	right:48px;
+	top:35px;
+}
+.header_right_inner .date_time{
+	display: block;
+	float:left;
+	font-size:35px;
+	color:#cfcfcf;
+	margin-right:30px;
+}
+.header_right_inner .date_year{
+	display: block;
+	float:left;
+	margin-right:30px;
+}
+.header_right_inner .date_year span{
+	display: block;
+	font-size:12px;
+	line-height: 18px;
+	color:#cfcfcf;
+	text-align: right;
+}
+.header_right_inner .back{
+	display: block;
+	background: url('../images/backBtn.png') no-repeat center center;
+	width:40px;
+	height:33px;
+	float:left;
+	cursor: pointer;
+} 
+.text-ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-all;
+}
+.text-ellipsis-2{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2; 
+}
+ 
+.mTop50{
+	margin-top: 50px;
+}
+.mTop20{
+	margin-top:20px;
+}
